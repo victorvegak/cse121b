@@ -34,10 +34,6 @@ const newFavoriteFood = "Ice Cream";
 
 favoriteFoods.push(newFavoriteFood);
 
-foodElement.textContent=  favoriteFoods.join(", ");
-
-favoriteFoods.shift();
-
 foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
 
 favoriteFoods.pop();
