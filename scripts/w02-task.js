@@ -24,21 +24,40 @@ imageElement.setAttribute("src", profilePicture);
 imageElement.setAttribute("alt", "Profile image of Victor Vega");
 
 
+
 /* Step 5 - Array */
+let favoriteFoods = ["Pizza", "Pasta", "Burgers"];
 
-const favoriteFoods = ["Pizza", "Pasta", "Burgers"];
+let foodListElement = document.createElement("p");
 
-foodElement.textContent = favoriteFoods.join(", ");
+foodListElement.textContent = favoriteFoods.join(", ");
+foodElement.appendChild(foodListElement);
 
-const newFavoriteFood = "Ice Cream";
+let newFood = "Ice Cream";
 
-favoriteFoods.push(newFavoriteFood);
+favoriteFoods.push(newFood);
 
-foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
+let updatedFoodListElement1 = document.createElement("p");
+updatedFoodListElement1.textContent = favoriteFoods.join(", ");
+
+foodElement.appendChild(updatedFoodListElement1);
+
+let removedFood = favoriteFoods.shift();
+
+
+foodElement.innerHTML += `<br>${favoriteFoods.join(", ")}`;
 
 favoriteFoods.pop();
 
-foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
+let updatedFoodListElement2 = document.createElement("p");
+updatedFoodListElement2.textContent = favoriteFoods.join(", ");
+
+foodElement.appendChild(updatedFoodListElement2);
+
+
+
+
+
 
 
 
