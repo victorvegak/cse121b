@@ -1,10 +1,10 @@
-let task = [];
+let tasks = [];
 
 function renderTasks(tasks) {
     // get the list element from the DOM
     const listElement = document.querySelector("#todoList");
     // make sure it is empty
-    listElement.InnerHTML = "";
+    listElement.innerHTML = "";
     // loop through the tasks array. for each of them we need to add the HTML markup for a todo.
     tasks.forEach((task) => {
         listElement.innerHTML += `
@@ -30,7 +30,7 @@ function newTask() {
 function removeTask(taskElement) {
     // note the use of Array.filter to remove the element from our task array
     tasks = tasks.filter(
-        (task) => task.detail != taskElement.childNodes [1] .innerText
+        (task) => task.detail != taskElement.childNodes [3] .innerText
     );
     // this line removes the HTML element from the DOM
     taskElement.remove();
@@ -39,7 +39,7 @@ function removeTask(taskElement) {
 function completeTask(taskElement) {
     // In this case we need to find the index of the task so we can modify it.
     const taskIndex = tasks.findIndex(
-        (task) => task.detail === taskElement.childNodes [1].innerText
+        (task) => task.detail === taskElement.childNodes [3].innerText
     );
     // once we have the index we can modify the complete field.
     // tasks[taskIndex].completed ? false : true is a ternary expression.
