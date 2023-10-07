@@ -71,5 +71,3 @@ document.querySelector("#submitTask").addEventListener("click", newTask);
 document.querySelector("#todList").addEventListener("click", manageTasks);
 
 renderTasks(tasks);
-
-
