@@ -68,6 +68,6 @@ function manageTasks(e) {
 
 // we need to attach listeners to the submit button and the list. Listen for a click, call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks.
 document.querySelector("#submitTask").addEventListener("click", newTask);
-document.querySelector("#todList").addEventListener("click", manageTasks);
+document.querySelector("#todoList").addEventListener("click", manageTasks);
 
 renderTasks(tasks);
