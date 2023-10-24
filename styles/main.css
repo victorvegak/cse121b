@@ -278,6 +278,60 @@ footer {
     box-shadow: 0 0 30px #777;
     margin: .5rem;
 }
+/*project*/
+.quote-container{
+    background-color: #bbc4cc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0 , 0 , 3);
+    margin: 8% auto;
+    max-width: 500px;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.quote-text {
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.author{
+    font-size: 25px;
+    font-weight: bold;
+    color:  #333;
+}
+
+#generate {
+    background-color: #007b00;
+    border: none;
+    border-radius: 10px;
+    color: #efefef;
+    cursor: pointer;
+    font-size: 32px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#generate:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 3);
+}
+
+#generate {
+    display: block;
+    margin: 0 auto;   
+}
+.quote-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
